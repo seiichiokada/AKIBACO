@@ -1,0 +1,120 @@
+@charset "UTF-18";
+html {
+    overflow-y: scroll;
+}
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+/*ヘッド*/
+#sec1 {
+	background-image: url(../img/SUNABACO1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    padding: 100px 50px 200px 50px;
+
+}
+#sec1 h1{
+	font-size: 30px;
+    line-height: 60px;
+    padding: 10px 50px 20px 50px;
+    color: #fff;
+}
+#sec1 p{
+	font-size: 20px;
+    line-height: 30px;
+	padding: 20px 50px ;
+    color: #fff;
+}
+
+
+
+
+/*ログイン*/
+#sec2 h2{
+    font-size: 30px;
+    line-height: 35px;
+    padding: 40px 50px;
+    font-weight: 200px;
+}
+
+.cp_name {
+	position: relative;
+	width: 70%;
+	margin: 40px ;
+}
+.cp_name input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 4px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_name input[type=text] {
+	padding-left: 5px;
+}
+.cp_name i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+/*反映されない(´;ω;｀)
+.cp_aaa {
+	position: relative;
+	width: 70%;(´;ω;｀)
+	margin: 40px ;
+}
+.cp_aaa input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 4px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_aaa input[type=text] {
+	padding-left: 5px;
+}
+.cp_aaa i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+/*
+
+
+
+/*SNSアイコン*/
+a[target=_blank] {
+	padding-right: 20px;
+	background: url(./../img/Twitter2.png) right center/20px auto no-repeat;
+}
+
+a[target=_blank] {
+	padding-right: 20px;
+	background: url(./../img/yatusiro.png) right center/20px auto no-repeat;
+}

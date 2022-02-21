@@ -8,7 +8,7 @@ app.secret_key = "akibaco"
 
 @app.route("/" , methods = ["get"])
 def login_get():
-    return render_template("top.html")
+    return render_template("Login.html")
 
 @app.route("/" , methods = ["post"])
 def login_post():
@@ -20,7 +20,7 @@ def login_post():
     id = c.fetchone()
     c.close()
     if id is None:
-        return render_template("top.html")
+        return render_template("Login.html")
     else:
         session["id"]=id[0]
         print(id)
