@@ -43,7 +43,7 @@ def add_post():
     return redirect("/map")
 
 # マップ情報でっせ
-@app.route("")
+# @app.route("")
 
 
 
@@ -65,7 +65,7 @@ def regist_post():
     password = request.form.get("password")
     conn = sqlite3.connect("akibacoDB.db")
     c = conn.cursor()
-    c.execute("Insert into user_name values (null,?,?)",(name,password))
+    c.execute("Insert into users values (null,?,?)",(name,password))
     conn.commit()
     c.close()
     return "登録完了"
