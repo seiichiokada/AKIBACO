@@ -1,74 +1,161 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/bootstrap.css">
 
     <title>map</title>
 
 </head>
+
 <body>
-    
-<header class = "fixed-top">
+    <!--ハンバーガーメニュー-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">AKIBACO</a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto">
-               <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">利用状況</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">お知らせ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">チャット</a>
-                </li>
-                <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">SUNABACO公式リンク </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                 </ul>
-                </li>
-              </ul>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">利用状況</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">お知らせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">みんなの声</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-</header>
-  
+
+
+    <!--座席表-->
+    <form action="/map" method="post"></form>
+    <section id="seat">
+        <h2 class="text-center m-5">利用状況</h2>
+        <div class="container">
+            <div class="row">
+                <div class="card col-xl-4 ">
+                    <!--画面の大きさでカラムの位置が変わる指定 etc.."col-xl-4 col-md-6"-->
+                    <img src="static/img/doa.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--イベント-->
+
+    <section id="event">
+        <h2 class="text-center m-5">お知らせ</h2>
+        <div class="container">
+            <div class="row">
+                <div class="card col-xl-4 ">
+                    <!--画面の大きさでカラムの位置が変わる指定 etc.."col-xl-4 col-md-6"-->
+                    <img src="static/img/wordpress体験講座.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">【八代】WordPress体験講座</p>
+                        <p class="card-text">開催日：2022/02/26</p>
+                        <p class="card-text"></p>13:00 〜 16:00</p>
+                    </div>
+                </div>
+
+                <div class="card col-xl-4">
+                    <img src="static/img/WEBタイピング入門.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEBスクレイピング入門 - 定期作業はプログラムで自動化しよう！</p>
+                        <p class="card-text">開催日：2022/03/03</p>
+                        <p class="card-text"></p>19:00 〜 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--チャット-->
+    <section id="chat">
+        <h2 class="text-center m-5">みんなの声</h2>
+
+        <div class="container">
+            <div class="chat bg-light p-4">
+                <div class="message d-flex flex-row align-items-start mb-4">
+                    <div class="message-icon rounded-circle bg-secondary text-white fs-3">
+                        <i class="fas fa-user"></i>
+                    </div><!-- .message-icon -->
+                    <p class="message-text p-2 ms-2 mb-0 bg-warning">
+                        サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+                    </p><!-- .message-text -->
+                </div><!-- .message -->
+                <div class="message d-flex flex-row-reverse align-items-start mb-4">
+                    <div class="message-icon rounded-circle bg-secondary text-white fs-3">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <!-- .message-icon -->
+                    <p class="message-text p-2 ms-2 mb-0 bg-warning">
+                        サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。
+                    </p><!-- .message-text -->
+                </div><!-- .message -->
+                <div class="message d-flex flex-row-reverse align-items-start mb-4">
+                    <div class="message-icon rounded-circle bg-secondary text-white fs-3">
+                        <i class="fas fa-user"></i>
+                    </div><!-- .message-icon -->
+                </div><!-- .message -->
+            </div><!-- .chat -->
+        </div><!-- .container -->
+
+    </section>
+
+    <!--チャット投稿-->
+    <article>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </article>
+    </form>
 
 
 
 
+    <footer>
+        <section id="SNS">
+            <!--Twitter-->
+            <div class="twitter">
+                <br><a href="https://twitter.com/intent/tweet?hashtags=SUNABACOやつしろ,コワーキングスペース" target="_blank"></a>
+            </div>
 
-
-
-
-
-
-
-
-
-
-
+            <!--SUNABACO-->
+            <div class="SUNABACO">
+                <br><a href="https://sunabaco.com/yatsushiro/" target="_blank"></a>
+            </div>
+        </section>
+    </footer>
 
 
 
 
     <!--Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
