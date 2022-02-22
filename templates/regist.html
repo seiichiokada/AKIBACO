@@ -1,9 +1,22 @@
-{% extends "base.html" %}
-{% block content %}
-<form action="/regist" method="post">
-    名前：<input type="text" size="50" maxlength="50" name="user_name" placeholder="名前入れてね" > 
-    パス：<input type="password" size="50" maxlength="50" name="password" placeholder="パス入れてね"> 
-    <input type="submit" name="save" value="登録" >
-</form>
 
-{% endblock %}
+
+<h2>新規登録ページ</h2>
+
+<section id = "sec2"></section>
+   <form action = "/regist" method = "post">
+       <div class="cp_name">
+         名前:<input type="text" size="30" maxlength="20" name="user_name" placeholder="名前">
+         <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+       </div>
+
+       <div class="cp_aaa">
+         パスワード:<input type = "password" size ="30" maxlength = "20" name = "password" placeholder="パスワード">
+         <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+       </div>
+
+       <input type = "submit" name ="save" value ="登録">
+
+    </form>
+</section>
+
+
