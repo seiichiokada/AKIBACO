@@ -43,6 +43,9 @@ def add_post():
     return redirect("/map")
 
 # マップ情報でっせ
+
+#@app.route("")
+
 # @app.route("")
 
 
