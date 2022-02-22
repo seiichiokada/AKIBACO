@@ -29,15 +29,21 @@
             </p>
         </section>
 
-
-
-
-
-
-       {% block content %}
-
-       {% endblock %}
-
+        <section id = "sec2">
+            <h2>ログイン</h2>
+                <form action="/login" method="post">
+                    <div class="cp_name">
+                        名    前：<input type="text" size="30" maxlength="20" name="user_name" placeholder="ユーザー名を入れてね!" > 
+                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <div class="cp_aaa">
+                        パスワード：<input type="password" size="30" maxlength="20" name="password" placeholder="パスワードを入れてね!">
+                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <input type="submit" name="save" value="ログイン" >
+                </form>
+        </section>
+        
    </article>
  
    

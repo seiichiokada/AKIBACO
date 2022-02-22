@@ -76,10 +76,10 @@ body {
 	transition: 0.3s;
 	color: #aaaaaa;
 }
-/*反映されない(´;ω;｀)
+
 .cp_aaa {
 	position: relative;
-	width: 70%;(´;ω;｀)
+	width: 70%;
 	margin: 40px ;
 }
 .cp_aaa input[type=text] {
