@@ -115,6 +115,10 @@ a[target=_blank] {
 }
 
 a[target=_blank] {
-	padding-right: 20px;
+	/* padding-right: 20px; */
 	background: url(./../img/yatusiro.png) right center/20px auto no-repeat;
+	display: block;
+	width: 20px;
+	height: 21.6px;
+	margin:0 auto
 }
