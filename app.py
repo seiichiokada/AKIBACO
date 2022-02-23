@@ -10,6 +10,7 @@ app.secret_key = "akibaco"
 @app.route("/" , methods = ["get"])
 def login_get():
     return render_template("top.html")
+    
 
 # @app.route("/" , methods = ["post"])
 # def login_post():
