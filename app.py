@@ -12,7 +12,7 @@ def login_get():
     return render_template("top.html")
 
 
-    
+
     
 
 @app.route("/" , methods = ["post"])
@@ -40,7 +40,7 @@ def add_get():
 
 @app.route("/map", methods = ["POST"])
 def add_post():
-    task = request.form.get("post_column")
+    task = request.form.get("task_kist")
     conn = sqlite3.connect("akibacoDB.db")
     c = conn.cursor()
     c.execute("Insert into post_column values (null,?,?)",(task,user_id))
