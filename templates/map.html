@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/Bootstrap.css">
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/stylemobile.css">
 
     <title>map</title>
 
@@ -16,52 +17,23 @@
 <body>
 
     <!--ハンバーガーメニュー-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-
-    
     <header class = "fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">AKIBACO</a>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-
-                        <a class="nav-link active" aria-current="page" href="#">利用状況</a>
+              <a class="navbar-brand" href="#">AKIBACO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">利用状況</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">お知らせ</a>
                     </li>
                     <li class="nav-item">
-
-                        <a class="nav-link" href="#">みんなの声</a>
+                        <a class="nav-link " href="#" >みんなの声</a>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-                        <a class="nav-link" href="#">チャット</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">SUNABACO公式リンク </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                </ul>
                 </div>
             </div>
         </nav>
@@ -76,12 +48,12 @@
     <!--座席表-->
     <form action="/map" method="post"></form>
     <section id="seat">
-        <h2 class="text-center m-5">利用状況</h2>
+        <h2 class="text-center ">利用状況</h2>
         <div class="container">
             <div class="row">
                 <div class="card col-xl-4 ">
                     <!--画面の大きさでカラムの位置が変わる指定 etc.."col-xl-4 col-md-6"-->
-                    <img src="static/img/doa.png" class="card-img-top" alt="...">
+                    <img src="static/img/doa2.png" class="card-img-top" alt="...">
                 </div>
             </div>
         </div>
@@ -92,7 +64,7 @@
     <!--イベント-->
 
     <section id="event">
-        <h2 class="text-center m-5">お知らせ</h2>
+        <h2 class="text-center ">お知らせ</h2>
         <div class="container">
             <div class="row">
                 <div class="card col-xl-4 ">
@@ -121,7 +93,7 @@
 
     <!--チャット-->
     <section id="chat">
-        <h2 class="text-center m-5">みんなの声</h2>
+        <h2 class="text-center">みんなの声</h2>
 
         <div class="container">
             <div class="chat bg-light p-4">
@@ -153,14 +125,6 @@
     </section>
 
     <!--チャット投稿-->
-    <article>
-
-        {% block content %}
-
-        {% endblock %}
-
-    </article>
-    </form>
 
 
 
