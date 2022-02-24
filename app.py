@@ -46,7 +46,7 @@ def add_post():
 
 
 # マップ情報でっせ
-#@app.route("/map")
+@app.route("/map")
 # def seat():
 #     if "user_id" in session:
 #         user_id = session["user_id"]
@@ -60,7 +60,7 @@ def add_post():
 #         print(task_list)
 #         return render_template("map.html", task_list = task_list)
 #     else:
-        # return redirect("/map")
+#         return redirect("/map")
 
 # 投稿リストでっせ
 @app.route("/bbs")
