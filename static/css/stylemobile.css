@@ -1,3 +1,12 @@
+
+/*---------- mapのcss ----------*/
+
+.nav-item {
+    color: aliceblue;
+}
+.nav-link{
+    color: aliceblue;
+}
 #seat .text-center {
     line-height: 35px;
     padding: 40px 15px 25px 15px;
@@ -14,4 +23,29 @@
     line-height: 35px;
     padding: 10px 15px;
 	margin: 24px 20px;
+}
+#chat .cp_list {
+    padding-left: 12px;
+}
+
+/*SNSアイコン*/
+#SNS {
+	display: flex;
+	justify-content: space-around;
+}
+
+#SNS .twitter a[target=_blank] {
+	background: url(./../img/Twitter2.png) right center/20px auto no-repeat;
+    height: 100px;
+	width: 100px;
+	margin: 20px;
+	padding: 20px;
+}
+
+#SNS .SUNABACO a[target=_blank] {
+	background: url(./../img/yatusiro.png) right center/20px auto no-repeat;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	padding: 20px;
 }

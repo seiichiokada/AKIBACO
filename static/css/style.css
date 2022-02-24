@@ -1,3 +1,8 @@
+
+/*---------- top&registのcss ----------*/
+
+
+
 @charset "UTF-18";
 html {
     overflow-y: scroll;
@@ -16,13 +21,13 @@ body {
 }
 
 
-/*ヘッド*/
+/*-------- ヘッド --------*/
 #sec1 {
 	background-image: url(../img/SUNABACO1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-    padding: 100px 50px 200px 50px;
+    padding: 100px 50px 100px 50px;
 
 }
 #sec1 h1{
@@ -41,7 +46,10 @@ body {
 
 
 
-/*ログイン*/
+/*-------- ログイン & 新規登録 --------*/
+#sec2 {
+	margin-bottom: 40px;
+}
 #sec2 h2{
     font-size: 30px;
     line-height: 35px;
@@ -49,10 +57,11 @@ body {
     font-weight: 200px;
 }
 
+/*name*/
 .cp_name {
 	position: relative;
 	width: 70%;
-	margin: 40px ;
+	margin: 0px 40px 40px 40px ;
 }
 .cp_name input[type=text] {
 	font: 15px/24px sans-serif;
@@ -77,12 +86,14 @@ body {
 	color: #aaaaaa;
 }
 
-.cp_aaa {
+
+/*passwprd*/
+.cp_password {
 	position: relative;
 	width: 70%;
 	margin: 40px ;
 }
-.cp_aaa input[type=text] {
+.cp_password input[type=text] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
 	width: 80%;
@@ -93,10 +104,10 @@ body {
 	border-radius: 4px;
 	outline: none;
 }
-.cp_aaa input[type=text] {
+.cp_password input[type=text] {
 	padding-left: 5px;
 }
-.cp_aaa i {
+.cp_password i {
 	position: absolute;
 	top: 8px;
 	left: 0;
@@ -104,21 +115,27 @@ body {
 	transition: 0.3s;
 	color: #aaaaaa;
 }
-/*
 
 
 
 /*SNSアイコン*/
-a[target=_blank] {
-	padding-right: 20px;
-	background: url(./../img/Twitter2.png) right center/20px auto no-repeat;
+#SNS {
+	display: flex;
+	justify-content: space-around;
 }
 
-a[target=_blank] {
-	/* padding-right: 20px; */
+#SNS .twitter a[target=_blank] {
+	background: url(./../img/Twitter2.png) right center/20px auto no-repeat;
+    height: 100px;
+	width: 100px;
+	margin: 20px;
+	padding: 20px;
+}
+
+#SNS .SUNABACO a[target=_blank] {
 	background: url(./../img/yatusiro.png) right center/20px auto no-repeat;
-	display: block;
-	width: 20px;
-	height: 21.6px;
-	margin:0 auto
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	padding: 20px;
 }
