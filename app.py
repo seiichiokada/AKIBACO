@@ -24,7 +24,7 @@ def login_post():
         return render_template("top.html")
     else:
         session["id"]=id[0]
-        print(id)
+        print(id[0])
         return redirect("/bbs")
 
 
@@ -65,8 +65,9 @@ def add_post():
 # 投稿リストでっせ
 @app.route("/bbs")
 def list():
-    if "user_id" in session:
-        user_id = session["user_id"]
+    if "id" in session:
+        print("読み込めた")
+        user_id = session["id"]
         conn = sqlite3.connect("akibacoDB.db")
         c = conn.cursor()
         c.execute("SELECT id, task FROM task where user_id = ?", (user_id,))
@@ -77,7 +78,8 @@ def list():
         print(task_list)
         return render_template("bbs.html", task_list = task_list)
     else:
-        return redirect("/bbs")
+        return redirect("https://www.johnnys-net.jp/page?artist=10&id=artistTop")
+        print("読み込めない!")
 
 
 # 新規登録でっせ
