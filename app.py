@@ -12,7 +12,6 @@ def login_get():
     return render_template("top.html")
 
 
-
     
 
 @app.route("/" , methods = ["post"])
