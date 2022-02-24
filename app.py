@@ -82,6 +82,9 @@ def list():
         print("読み込めない!")
 
 
+
+
+
 # 新規登録でっせ
 @app.route("/regist", methods = ["get"])
 def regist_get():
