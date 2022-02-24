@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class = "fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">AKIBACO</a>
+              <a class="navbar-brand" href="#">AKIBACO</a>
             </div>
         </nav>
     </header>
@@ -27,33 +27,30 @@
 
         <section id="sec1">
             <h1>AKIBACO</h1>
+
             <p>ここでは八代のコワーキングスペースの状況が確認できる
                 
             </p>
-        </section>
 
-        <h2>新規登録ページ</h2>
+            <p>ここでは八代のコワーキングスペースの状況が確認できる</p>
+
+        </section>
 
         <section id="sec2">
+            <h2>新規登録</h2>
             <form action="/regist" method="post">
                 <div class="cp_name">
-                    名前:<input type="text" size="30" maxlength="20" name="user_name" placeholder="名前">
+                    名 前：<input type="text" size="30" maxlength="20" name="user_name" placeholder="名前">
                     <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
-
-                <div class="cp_aaa">
-                    パスワード:<input type="password" size="30" maxlength="20" name="password" placeholder="パスワード">
+                <div class="cp_password">
+                    パスワード：<input type="password" size="20" maxlength="20" name="password" placeholder="パスワードを入れてね!">
                     <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
-
-                <input type="submit" name="save" value="登録">
-
+                <input type="submit" name="save" value="登録">          
             </form>
         </section>
-
-
     </article>
-
 
     <footer>
         <section id="SNS">
