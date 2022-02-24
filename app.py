@@ -25,7 +25,7 @@ def login_post():
     else:
         session["id"]=id[0]
         print(id)
-        return redirect("/map")
+        return redirect("/bbs")
 
 
 # 投稿でっせ
@@ -46,7 +46,7 @@ def add_post():
 
 
 # マップ情報でっせ
-@app.route("/map")
+# @app.route("/map")
 # def seat():
 #     if "user_id" in session:
 #         user_id = session["user_id"]
@@ -94,7 +94,7 @@ def regist_post():
     c.execute("Insert into users values (null,?,?)",(name,password))
     conn.commit()
     c.close()
-    return redirect("/map")
+    return redirect("/bbs")
 
 
 if __name__ == "__main__":
