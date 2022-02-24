@@ -1,6 +1,10 @@
 
 /*---------- mapのcss ----------*/
 
+
+li {
+	list-style-type: none;
+}
 .nav-item {
     color: aliceblue;
 }
