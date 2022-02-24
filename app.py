@@ -29,28 +29,41 @@ def login_post():
 
 
 # 投稿でっせ
-@app.route("/map", methods =["GET"])
+@app.route("/add", methods =["GET"])
 def add_get():
-    return render_template("map.html")
+    return render_template("add.html")
 
-@app.route("/map", methods = ["POST"])
+@app.route("/add", methods = ["POST"])
 def add_post():
-    task = request.form.get("task_kist")
+    user_id = session["user_id"]
+    task = request.form.get("task")
     conn = sqlite3.connect("akibacoDB.db")
     c = conn.cursor()
-    c.execute("Insert into post_column values (null,?,?)",(task,user_id))
+    c.execute("Insert into task values (null,?,?)",(task , user_id))
     conn.commit()
     c.close()
-    return redirect("/map")
+    return redirect("/bbs")
 
 
 # マップ情報でっせ
-
-#@app.route("")
-
+#@app.route("/map")
+# def seat():
+#     if "user_id" in session:
+#         user_id = session["user_id"]
+#         conn = sqlite3.connect("akibacoDB.db")
+#         c = conn.cursor()
+#         c.execute("SELECT seat_number , use_seat FROM map)
+#         task_list = []
+#         for row in c.fetchall():
+#             task_list.append({"seat_number":row[0],"use_seat":row[1]})
+#         c.close()
+#         print(task_list)
+#         return render_template("map.html", task_list = task_list)
+#     else:
+        # return redirect("/map")
 
 # 投稿リストでっせ
-@app.route("/map")
+@app.route("/bbs")
 def list():
     if "user_id" in session:
         user_id = session["user_id"]
@@ -62,9 +75,9 @@ def list():
             task_list.append({"id":row[0],"task":row[1]})
         c.close()
         print(task_list)
-        return render_template("map.html", task_list = task_list)
+        return render_template("bbs.html", task_list = task_list)
     else:
-        return redirect("/top")
+        return redirect("/bbs")
 
 
 # 新規登録でっせ
