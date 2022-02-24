@@ -11,9 +11,6 @@ app.secret_key = "akibaco"
 def login_get():
     return render_template("top.html")
 
-
-    
-
 @app.route("/" , methods = ["post"])
 def login_post():
     name = request.form.get("user_name")
@@ -33,11 +30,11 @@ def login_post():
 
 
 # 投稿でっせ
-@app.route("/map", methods =["GET"])
+@app.route("/list", methods =["GET"])
 def add_get():
     return render_template("map.html")
 
-@app.route("/map", methods = ["POST"])
+@app.route("/list", methods = ["POST"])
 def add_post():
     task = request.form.get("task_kist")
     conn = sqlite3.connect("akibacoDB.db")
@@ -45,7 +42,7 @@ def add_post():
     c.execute("Insert into post_column values (null,?,?)",(task,user_id))
     conn.commit()
     c.close()
-    return redirect("/map")
+    return redirect("/list")
 
 # マップ情報でっせ
 
