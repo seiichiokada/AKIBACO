@@ -1,15 +1,9 @@
-document.querySelector('#input').addEventListener('change', (event) => {
-    const file = event.target.files[0]
-  
-    // fileがundefinedの時にreader.readAsDataURL(file)がエラーになるため、
-    // !fileがfalseの場合にreturnする。
-    if (!file) return
-  
-    const reader = new FileReader()
-  
-    reader.onload = (event) => {
-      document.querySelector('#img').src = event.target.result
-    }
-  
-    reader.readAsDataURL(file)
-  })
+$(function(){
+	$('.gazo').click(function(){
+		if($(this).hasClass('open') == false){
+			$(this).attr('src', 'static/img/Chairred.png').addClass('open');
+		}else{
+			$(this).attr('src', 'static/img/chairgreen.png').removeClass('open');
+		}
+	});
+});
