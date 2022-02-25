@@ -7,25 +7,25 @@ app.secret_key = "akibaco"
 
 
 # ログインでっせ
-@app.route("/" , methods = ["get"])
+@app.route("/" , methods = ["GET"])
 def login_get():
     return render_template("top.html")
 
-@app.route("/" , methods = ["post"])
+@app.route("/" , methods = ["POST"])
 def login_post():
     name = request.form.get("user_name")
     password = request.form.get("password")
     conn = sqlite3.connect("akibacoDB.db")
     c = conn.cursor()
     c.execute("SELECT id FROM users where name = ? and password = ?", (name,password))
-    id = c.fetchone()
+    user_id = c.fetchone()
     c.close()
-    if id is None:
+    if user_id is None:
         return render_template("top.html")
     else:
-        session["id"]=id[0]
-        print(id[0])
-        return redirect("/bbs")
+        session["user_id"]=user_id[0]
+        print(user_id)
+        return redirect("/map")
 
 
 # 投稿でっせ
@@ -46,28 +46,28 @@ def add_post():
 
 
 # マップ情報でっせ
-# @app.route("/map")
-# def seat():
-#     if "user_id" in session:
-#         user_id = session["user_id"]
-#         conn = sqlite3.connect("akibacoDB.db")
-#         c = conn.cursor()
-#         c.execute("SELECT seat_number , use_seat FROM map)
-#         task_list = []
-#         for row in c.fetchall():
-#             task_list.append({"seat_number":row[0],"use_seat":row[1]})
-#         c.close()
-#         print(task_list)
-#         return render_template("map.html", task_list = task_list)
-#     else:
-#         return redirect("/map")
+@app.route("/map")
+def seat():
+    if "user_id" in session:
+        user_id = session["user_id"]
+        conn = sqlite3.connect("akibacoDB.db")
+        c = conn.cursor()
+        c.execute("SELECT seat_number , use_seat FROM map")
+        task_list = []
+        for row in c.fetchall():
+            task_list.append({"seat_number":row[0],"use_seat":row[1]})
+        c.close()
+        print(task_list)
+        return render_template("map.html", task_list = task_list)
+    else:
+        return redirect("/map")
 
 # 投稿リストでっせ
 @app.route("/bbs")
 def list():
-    if "id" in session:
+    if "user_id" in session:
         print("読み込めた")
-        user_id = session["id"]
+        user_id = session["user_id"]
         conn = sqlite3.connect("akibacoDB.db")
         c = conn.cursor()
         c.execute("SELECT id, task FROM task where user_id = ?", (user_id,))
@@ -76,9 +76,9 @@ def list():
             task_list.append({"id":row[0],"task":row[1]})
         c.close()
         print(task_list)
-        return render_template("bbs.html", task_list = task_list)
+        return render_template("map.html", task_list = task_list)
     else:
-        return redirect("https://www.johnnys-net.jp/page?artist=10&id=artistTop")
+        return "読み込めない!"
         print("読み込めない!")
 
 
@@ -99,8 +99,12 @@ def regist_post():
     c.execute("Insert into users values (null,?,?)",(name,password))
     conn.commit()
     c.close()
-    return redirect("/bbs")
+    return redirect("/")
 
+
+# @app.route("/edit")
+# def mapedit():
+#     return render_template("map.html")
 
 if __name__ == "__main__":
     app.run (debug=True)
