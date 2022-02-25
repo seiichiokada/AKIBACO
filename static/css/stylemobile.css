@@ -2,7 +2,423 @@
 /*---------- mapのcss ----------*/
 
 
-/*----- map -----*/
+/*----- 座席 -----*/
+
+#seat2 .set1 img {
+	margin: 5px;
+}
+.row {
+    position: relative;
+}
+
+/*左の席(上)*/
+#seat2 .seeet1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+#seat2 .seeet2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+#seat2 .seeet3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+#seat2 .seeet4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+
+/*左の席(下)*/
+#seat2 .seeet5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+
+    
+    position: absolute;
+    top: 43%;
+    left: 8%;
+}
+#seat2 .seeet6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+
+    
+    position: absolute;
+    top: 43%;
+    left: 18%;
+}
+#seat2 .seeet7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+
+    
+    position: absolute;
+    top: 43%;
+    left: 28%;
+}
+#seat2 .seeet8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+
+    
+    position: absolute;
+    top: 43%;
+    left: 38%;
+}
+
+
+/*右の席(右)*/
+#seat2 .seeet9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 19%;
+    left: 83%;
+}
+#seat2 .seeet10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 23%;
+    left: 83%;
+}
+#seat2 .seeet11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 28%;
+    left: 83%;
+}
+#seat2 .seeet12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 32%;
+    left: 83%;
+}
+
+/*右の席(左)*/
+#seat2 .seeet13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 19%;
+    left: 55%;
+}
+#seat2 .seeet14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 23%;
+    left: 55%;
+}
+#seat2 .seeet15 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 28%;
+    left: 55%;
+}
+#seat2 .seeet16 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 32%;
+    left: 55%;
+}
+
+/*下の席(右)*/
+#seat2 .seeet17 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 53.5%;
+    left: 47%;
+}
+#seat2 .seeet18 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 58%;
+    left: 47%;
+}
+#seat2 .seeet19 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 62.5%;
+    left: 47%;
+}
+#seat2 .seeet20 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 66.5%;
+    left: 47%;
+}
+#seat2 .seeet21 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 71%;
+    left: 47%;
+}
+#seat2 .seeet22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 75.5%;
+    left: 47%;
+}
+#seat2 .seeet23 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 80%;
+    left: 47%;
+}
+#seat2 .seeet24 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 84.5%;
+    left: 47%;
+}
+#seat2 .seeet25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 89%;
+    left: 47%;
+}
+#seat2 .seeet26 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+    
+    position: absolute;
+    top: 93.5%;
+    left: 47%;
+}
+
+/*下の席(左)*/
+#seat2 .seeet27 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 53.5%;
+    left: 18%;
+}
+#seat2 .seeet28 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 58%;
+    left: 18%;
+}
+#seat2 .seeet29 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 62.5%;
+    left: 18%;
+}
+#seat2 .seeet30 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 66.5%;
+    left: 18%;
+}
+#seat2 .seeet31 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 71%;
+    left: 18%;
+}
+#seat2 .seeet32 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 75.5%;
+    left: 18%;
+}
+#seat2 .seeet33 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 80%;
+    left: 18%;
+}
+#seat2 .seeet34 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 84.5%;
+    left: 18%;
+}
+#seat2 .seeet35 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 89%;
+    left: 18%;
+}
+#seat2 .seeet36 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(270deg);
+    
+    position: absolute;
+    top: 93.5%;
+    left: 18%;
+}
 
 
 
@@ -40,11 +456,11 @@ li {
 /*SNSアイコン*/
 #SNS {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 #SNS .twitter a[target=_blank] {
-	background: url(./../img/Twitter2.png) right center/20px auto no-repeat;
+	background: url(./../img/Twitter2.png) right center/36px auto no-repeat;
     height: 100px;
 	width: 100px;
 	margin: 20px;
@@ -52,7 +468,7 @@ li {
 }
 
 #SNS .SUNABACO a[target=_blank] {
-	background: url(./../img/yatusiro.png) right center/20px auto no-repeat;
+	background: url(./../img/yatusiro.png) right center/36px auto no-repeat;
 	height: 100px;
 	width: 100px;
 	margin: 20px;

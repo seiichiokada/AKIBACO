@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/Bootstrap.css">
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/Bootstrap.css">
     <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/stylemobile.css">
-
-        <title>map</title>
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+    <script src="static/js/test.js"></script>
+        
+    <title>map</title>
 
 </head>
 
@@ -27,13 +29,13 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">利用状況</a>
+                    <a class="nav-link" href="/map">利用状況</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">お知らせ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">みんなの声</a>
+                    <a class="nav-link" href="/add">みんなの声</a>
                   </li>
                 </ul>
               </div>
@@ -43,45 +45,78 @@
   
 
     <!--座席表-->
-    <form action="/map" method="post"></form>
-    <section id="seat">
-        <h2 class="text-center ">利用状況</h2>
-        <div class="container">
-            <div class="row">
-                <div class="card col-xl-4 ">
-                    <!--画面の大きさでカラムの位置が変わる指定 etc.."col-xl-4 col-md-6"-->
-                    <img src="static/img/doa2.png" class="card-img-top" alt="...">
-                </div>
-            </div>
-            <div class="seat">
-              <a href="./../static/img/chairgreen.png"></a>
-            </div>
+  <form action="/map" method="post"></form>
+  <section id="seat">
+    <h2 class="text-center ">利用状況</h2>
+    <div class="container">
+      <div class="row">
+        <div class="card col-xl-4 ">
+          <!--画面の大きさでカラムの位置が変わる指定 etc.."col-xl-4 col-md-6"-->
+          <img src="static/img/doa2.png" class="card-img-top" alt="...">
         </div>
-        <div class="cp_seat">
-  
       </div>
+    </div>
+ </section>
+
+
+    
+  <section id="seat2">
+    <div class="seet">
+      <form action="/map">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set1" class="seeet1" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set2" class="seeet2" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set3" class="seeet3" src="static/img/chairgreen.png" >
+        <input type="image" width="44px" height="30px"  magin="5px" name="set4" class="seeet4" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set5" class="seeet5" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set6" class="seeet6" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set7" class="seeet7" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set8" class="seeet8" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set9" class="seeet9" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set10" class="seeet10" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set11" class="seeet11" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set12" class="seeet12" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set13" class="seeet13" src="static/img/chairgreen.png" >
+        <input type="image" width="44px" height="30px"  magin="5px" name="set14" class="seeet14" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set15" class="seeet15" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set16" class="seeet16" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set17" class="seeet17" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set18" class="seeet18" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set19" class="seeet19" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set20" class="seeet20" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set21" class="seeet21" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set22" class="seeet22" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set23" class="seeet23" src="static/img/chairgreen.png" >
+        <input type="image" width="44px" height="30px"  magin="5px" name="set24" class="seeet24" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set25" class="seeet25" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set26" class="seeet26" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set27" class="seeet27" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set28" class="seeet28" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set29" class="seeet29" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set30" class="seeet30" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set31" class="seeet31" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set32" class="seeet32" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set33" class="seeet33" src="static/img/chairgreen.png" >
+        <input type="image" width="44px" height="30px"  magin="5px" name="set34" class="seeet34" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set35" class="seeet35" src="static/img/chairgreen.png">
+        <input type="image" width="44px" height="30px"  magin="5px" name="set36" class="seeet36" src="static/img/chairgreen.png">
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <section id="SNS">
+        <!--Twitter-->
+        <div class="twitter">
+            <br><a href="https://twitter.com/intent/tweet?hashtags=SUNABACOやつしろ,コワーキングスペース" target="_blank"></a>
+        </div>
+
+        <!--SUNABACO-->
+        <div class="SUNABACO">
+            <br><a href="https://sunabaco.com/yatsushiro/" target="_blank"></a>
+        </div>
     </section>
-
-
-  <body>
-    <div id="div1"></div>
-  </body>
-
-
-
-    <footer>
-        <section id="SNS">
-            <!--Twitter-->
-            <div class="twitter">
-                <br><a href="https://twitter.com/intent/tweet?hashtags=SUNABACOやつしろ,コワーキングスペース" target="_blank"></a>
-            </div>
-
-            <!--SUNABACO-->
-            <div class="SUNABACO">
-                <br><a href="https://sunabaco.com/yatsushiro/" target="_blank"></a>
-            </div>
-        </section>
-    </footer>
+  </footer>
 
 
 

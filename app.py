@@ -48,19 +48,20 @@ def add_post():
 # マップ情報でっせ
 @app.route("/map")
 def seat():
-    if "user_id" in session:
-        user_id = session["user_id"]
-        conn = sqlite3.connect("akibacoDB.db")
-        c = conn.cursor()
-        c.execute("SELECT seat_number , use_seat FROM map")
-        task_list = []
-        for row in c.fetchall():
-            task_list.append({"seat_number":row[0],"use_seat":row[1]})
-        c.close()
-        print(task_list)
-        return render_template("map.html", task_list = task_list)
-    else:
-        return redirect("/map")
+    return render_template("map.html")
+    # if "user_id" in session:
+    #     user_id = session["user_id"]
+    #     conn = sqlite3.connect("akibacoDB.db")
+    #     c = conn.cursor()
+    #     c.execute("SELECT seat_number , use_seat FROM map")
+    #     task_list = []
+    #     for row in c.fetchall():
+    #         task_list.append({"seat_number":row[0],"use_seat":row[1]})
+    #     c.close()
+    #     print(task_list)
+    #     return render_template("map.html", task_list = task_list)
+    # else:
+    #     return redirect("/map")
 
 # 投稿リストでっせ
 @app.route("/bbs")
