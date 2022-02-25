@@ -27,9 +27,7 @@
 
         <section id="sec1">
             <h1>AKIBACO</h1>
-            <p>ここでは八代のコワーキングスペースの状況が確認できる
-
-            </p>
+            <p>ここでは八代のコワーキングスペースの状況が確認できる</p>
         </section>
 
         <section id="sec2">
@@ -37,17 +35,20 @@
 
             <form action="/" method="post">
                 <div class="cp_name">
-                    名 前：<input type="text" size="30" maxlength="20" name="user_name" placeholder="ユーザー名を入れてね!">
+                    ユーザー名:<input type="text" size="30" maxlength="20" name="user_name" placeholder="ユーザー名を入れてね!">
+                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                </div>     
+                <div class="cp_iptxt">
+                    パスワード:<input type="text" size="30" maxlength="20" name="user_name" placeholder="パスワードを入れてね!">
                     <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
-                <div class="cp_password">
-                    パスワード：<input type="password" size="20" maxlength="20" name="password" placeholder="パスワードを入れてね!">
-                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <input type="submit" name="save" value="ログイン">          
             </form>
-           
-            <a href="/regist">初めての方はこちら!!!</a>
+            <div class="btn">
+                <input type="submit" name="save" value="ログイン" class="btn btn--orange btn--radius"> 
+            </div>
+            <div class="regist">
+                <a href="/regist">初めての方はこちら!!!</a>
+            </div>
         </section>
 
     </article>

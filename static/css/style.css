@@ -21,6 +21,7 @@ body {
 }
 
 
+
 /*-------- ヘッド --------*/
 #sec1 {
 	background-image: url(../img/SUNABACO1.jpg);
@@ -45,10 +46,9 @@ body {
 
 
 
-
 /*-------- ログイン & 新規登録 --------*/
 #sec2 {
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 }
 #sec2 h2{
     font-size: 30px;
@@ -56,26 +56,89 @@ body {
     padding: 40px 50px;
     font-weight: 200px;
 }
+#sec2 .btn{
+	padding-top: 20px;
+	padding-left: 180px;
+}
+#sec2 .regist{
+	padding: 4px;
+	padding-left: 168px;
+
+}
+#sec2 .btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  padding: 8px 32px;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
 
 /*name*/
-.cp_name {
+.cp_iptxt {
 	position: relative;
-	width: 70%;
-	margin: 0px 40px 40px 40px ;
+	width: 80%;
+	margin: 0px 40px 20px 36px;
 }
-.cp_name input[type=text] {
+.cp_iptxt input[type=text] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
-	width: 80%;
-	margin: 4px 0;
+	width: 70%;
+	margin: 8px 0;
 	padding: 0.3em;
 	transition: 0.3s;
 	border: 1px solid #1b2538;
 	border-radius: 4px;
 	outline: none;
 }
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 4px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
+}
+
+
+/*passwprd*/
+.cp_name {
+	position: relative;
+	width: 80%;
+	margin: 0px 40px 20px 36px;
+}
 .cp_name input[type=text] {
-	padding-left: 5px;
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 70%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_name input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_name input[type=text] {
+	padding-left: 4px;
 }
 .cp_name i {
 	position: absolute;
@@ -85,47 +148,21 @@ body {
 	transition: 0.3s;
 	color: #aaaaaa;
 }
+.cp_ input[type=text]:focus + i {
+	color: #da3c41;
+}
 
-
-/*passwprd*/
-.cp_password {
-	position: relative;
-	width: 70%;
-	margin: 40px ;
-}
-.cp_password input[type=text] {
-	font: 15px/24px sans-serif;
-	box-sizing: border-box;
-	width: 80%;
-	margin: 4px 0;
-	padding: 0.3em;
-	transition: 0.3s;
-	border: 1px solid #1b2538;
-	border-radius: 4px;
-	outline: none;
-}
-.cp_password input[type=text] {
-	padding-left: 5px;
-}
-.cp_password i {
-	position: absolute;
-	top: 8px;
-	left: 0;
-	padding: 9px 8px;
-	transition: 0.3s;
-	color: #aaaaaa;
-}
 
 
 
 /*SNSアイコン*/
 #SNS {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 #SNS .twitter a[target=_blank] {
-	background: url(./../img/Twitter2.png) right center/20px auto no-repeat;
+	background: url(./../img/Twitter2.png) right center/36px auto no-repeat;
     height: 100px;
 	width: 100px;
 	margin: 20px;
@@ -133,9 +170,47 @@ body {
 }
 
 #SNS .SUNABACO a[target=_blank] {
-	background: url(./../img/yatusiro.png) right center/20px auto no-repeat;
+	background: url(./../img/yatusiro.png) right center/36px auto no-repeat;
 	height: 100px;
 	width: 100px;
 	margin: 20px;
 	padding: 20px;
+}
+
+
+
+
+
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
 }
