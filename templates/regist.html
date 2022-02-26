@@ -10,11 +10,12 @@
     <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/Bootstrap.css">
     <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/style.css">
 
-    <title>AKIBACO</title>
+    <title>新規登録</title>
 
 </head>
 
 <body>
+    <!------------ハンバーガーメニュー------------>
     <header class = "fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
@@ -23,38 +24,43 @@
         </nav>
     </header>
 
-    <article>
 
+    
+    <article>
+        <!------------ ヘッドの写真・文章 ------------>
         <section id="sec1">
             <h1>AKIBACO</h1>
-
             <p>ここでは八代のコワーキングスペースの状況が確認できる</p>
-
         </section>
 
-        <section id="sec2">
-            <h2>新規登録</h2>
-            <form action="/regist" method="post">
-                <div class="cp_name">
-                    名 前：<input type="text" size="30" maxlength="20" name="user_name" placeholder="名前">
-                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <div class="cp_password">
-                    パスワード：<input type="password" size="20" maxlength="20" name="password" placeholder="パスワードを入れてね!">
-                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <input type="submit" name="save" value="登録">          
-            </form>
-        </section>
+
+
+      <!------------新規登録フォーム------------>
+        <h2>新規登録</h2>
+        <form action="/regist" method="post">
+            <div class="cp_name">
+                ユーザー名:<input type="text" size="30" maxlength="20" name="user_name" placeholder="ユーザー名を入れてね!">
+                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+            </div>     
+            <div class="cp_password">
+                パスワード:<input type="password" size="25" maxlength="20" name="password" placeholder="パスワードを入れてね!">
+                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+            <div class="btn">
+                <input type="submit" name="save" value="登録!"> 
+            </div>
+        </form>
     </article>
 
+
+
+    <!------------ フッター ------------>
     <footer>
         <section id="SNS">
             <!--Twitter-->
             <div class="twitter">
                 <br><a href="https://twitter.com/intent/tweet?hashtags=SUNABACOやつしろ,コワーキングスペース" target="_blank"></a>
             </div>
-
             <!--SUNABACO-->
             <div class="SUNABACO">
                 <br><a href="https://sunabaco.com/yatsushiro/" target="_blank"></a>
@@ -62,10 +68,11 @@
         </section>
     </footer>
 
-    <!--Js-->
+
+
+    <!------------Js------------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
