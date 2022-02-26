@@ -11,55 +11,53 @@
     <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/stylemobile.css">
     <script src="static/js/jquery-3.6.0.min.js"></script>
         
-    <title>map</title>
+    <title>利用状況</title>
 
 </head>
 
 <body>
-
-    <!--ハンバーガーメニュー-->
-    <header class = "fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">AKIBACO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/map">利用状況</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">お知らせ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/add">みんなの声</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+  <!------------ハンバーガーメニュー------------>
+  <header class = "fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AKIBACO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/map">利用状況</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/add">投稿</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bbs">みんなの声</a>
+            </li>
+          </ul>
+       </div>
+      </div>
+    </nav>
+  </header>
   
 
-    <!--座席表-->
-  <form action="/map" method="post"></form>
+
+  <!------------座席表 机------------>
   <section id="seat">
     <h2 class="text-center ">利用状況</h2>
     <div class="container">
-      <div class="row">
-        <div class="card col-xl-4 ">
           <!--画面の大きさでカラムの位置が変わる指定 etc.."col-xl-4 col-md-6"-->
-          <img src="static/img/doa2.png" class="card-img-top" alt="...">
-        </div>
-      </div>
+          <img calss="desk" src="static/img/doa2.png" width="100%" height="auto" class="card-img-top" alt="...">
     </div>
  </section>
-    
+
+  <!------------座席表 椅子------------>
+
   <section id="seat2">
     <div class="seet">
       <form action="/map"> 
+
         <img class="gazo seeet1" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="" id = "1">
         <img class="gazo seeet2" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="" id = "2">
         <img class="gazo seeet3" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="" id = "3">
@@ -97,35 +95,98 @@
         <img class="gazo seeet35" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="" id = "35">
         <img class="gazo seeet36" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="" id = "36">
 
-      </form>
+
+        <img class="gazo seeet1" width="10%" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet2" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet3" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet4" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet5" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet6" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet7" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet8" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet9" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet10" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet11" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet12" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet13" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet14" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet15" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet16" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet17" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet18" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet19" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet20" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet21" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet22" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet23" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet24" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet25" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet26" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet27" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet28" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet29" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet30" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet31" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet32" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet33" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet34" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet35" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+        <img class="gazo seeet36" width="44px" height="30px"  magin="5px" src="static/img/chairgreen.png" alt="">
+
+
+
+
+
+  <!------------お知らせ------------>
+  <section id="event">
+    <h2 class="text-center ">お知らせ</h2>
+    <div class="container">
+      <div class="row">
+        <div class="card col-xl-4 ">
+          <img src="static/img/wordpress体験講座.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">【八代】WordPress体験講座</p>
+            <p class="card-text">開催日：2022/02/26</p>
+            <p class="card-text">13:00 〜 16:00</p>
+          </div>
+        </div>
+        <div class="card col-xl-4">
+          <img src="static/img/WEBタイピング入門.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">WEBスクレイピング入門 - 定期作業はプログラムで自動化しよう！</p>
+              <p class="card-text">開催日：2022/03/03</p>
+              <p class="card-text">19:00 〜 22:00</p>
+            </div>
+        </div>
+      </div>
     </div>
   </section>
 
 
+
+  <!------------ フッター ------------>
   <footer>
     <section id="SNS">
-        <!--Twitter-->
-        <div class="twitter">
-            <br><a href="https://twitter.com/intent/tweet?hashtags=SUNABACOやつしろ,コワーキングスペース" target="_blank"></a>
-        </div>
+      <!--Twitter-->
+      <div class="twitter">
+        <br><a href="https://twitter.com/intent/tweet?hashtags=SUNABACOやつしろ,コワーキングスペース" target="_blank"></a>
+      </div>
 
-        <!--SUNABACO-->
-        <div class="SUNABACO">
-            <br><a href="https://sunabaco.com/yatsushiro/" target="_blank"></a>
-        </div>
+      <!--SUNABACO-->
+      <div class="SUNABACO">
+        <br><a href="https://sunabaco.com/yatsushiro/" target="_blank"></a>
+      </div>
     </section>
   </footer>
 
 
 
-
-    <!--Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="static/js/test.js"></script>
+  <!------------Js------------>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="static/js/test.js"></script>
 
 
 </body>
-
 </html>

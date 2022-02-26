@@ -77,7 +77,7 @@ def list():
             task_list.append({"id":row[0],"task":row[1]})
         c.close()
         print(task_list)
-        return render_template("map.html", task_list = task_list)
+        return render_template("bbs.html", task_list = task_list)
     else:
         return "読み込めない!"
         print("読み込めない!")
