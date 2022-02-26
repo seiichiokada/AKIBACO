@@ -1,15 +1,30 @@
 
-/*---------- mapのcss ----------*/
+/*---------- /map ----------*/
 
 
 /*----- 座席 -----*/
 
-#seat2 .set1 img {
+/* #seat2 .set1 img {
 	margin: 5px;
 }
 .row {
     position: relative;
+    
+} */
+#seat img {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
+
+#seat .desk  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
 /*左の席(上)*/
 #seat2 .seeet1 {
