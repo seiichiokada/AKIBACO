@@ -1,5 +1,5 @@
 
-/*---------- top&registのcss ----------*/
+/*---------- /top・/regist・/bbs・/add ----------*/
 
 
 
@@ -22,7 +22,7 @@ body {
 
 
 
-/*-------- ヘッド --------*/
+/*------------------------------ ヘッド ------------------------------*/
 #sec1 {
 	background-image: url(../img/SUNABACO1.jpg);
 	background-repeat: no-repeat;
@@ -46,7 +46,31 @@ body {
 
 
 
-/*-------- ログイン & 新規登録 --------*/
+/*------------------------------ SNSアイコン(footer) ------------------------------*/
+#SNS {
+	display: flex;
+	justify-content: center;
+}
+
+#SNS .twitter a[target=_blank] {
+	background: url(./../img/Twitter2.png) right center/36px auto no-repeat;
+    height: 100px;
+	width: 100px;
+	margin: 20px;
+	padding: 20px;
+}
+
+#SNS .SUNABACO a[target=_blank] {
+	background: url(./../img/yatusiro.png) right center/36px auto no-repeat;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	padding: 20px;
+}
+
+
+
+/*------------------------------ ログイン(/top) & 新規登録(/regist) ------------------------------*/
 #sec2 {
 	margin-bottom: 36px;
 }
@@ -81,47 +105,11 @@ a.btn--radius {
    border-radius: 100vh;
 }
 
-/*name*/
-.cp_iptxt {
-	position: relative;
-	width: 80%;
-	margin: 0px 40px 20px 36px;
-}
-.cp_iptxt input[type=text] {
-	font: 15px/24px sans-serif;
-	box-sizing: border-box;
-	width: 70%;
-	margin: 8px 0;
-	padding: 0.3em;
-	transition: 0.3s;
-	border: 1px solid #1b2538;
-	border-radius: 4px;
-	outline: none;
-}
-.cp_iptxt input[type=text]:focus {
-	border-color: #da3c41;
-}
-.cp_iptxt input[type=text] {
-	padding-left: 4px;
-}
-.cp_iptxt i {
-	position: absolute;
-	top: 8px;
-	left: 0;
-	padding: 9px 8px;
-	transition: 0.3s;
-	color: #aaaaaa;
-}
-.cp_iptxt input[type=text]:focus + i {
-	color: #da3c41;
-}
-
-
-/*passwprd*/
+/*----- cp_name -----*/
 .cp_name {
 	position: relative;
 	width: 80%;
-	margin: 0px 40px 20px 36px;
+	margin: 0px 40px 30px 36px;
 }
 .cp_name input[type=text] {
 	font: 15px/24px sans-serif;
@@ -148,48 +136,21 @@ a.btn--radius {
 	transition: 0.3s;
 	color: #aaaaaa;
 }
-.cp_ input[type=text]:focus + i {
+.cp_name input[type=text]:focus + i {
 	color: #da3c41;
 }
 
 
-
-
-/*SNSアイコン*/
-#SNS {
-	display: flex;
-	justify-content: center;
-}
-
-#SNS .twitter a[target=_blank] {
-	background: url(./../img/Twitter2.png) right center/36px auto no-repeat;
-    height: 100px;
-	width: 100px;
-	margin: 20px;
-	padding: 20px;
-}
-
-#SNS .SUNABACO a[target=_blank] {
-	background: url(./../img/yatusiro.png) right center/36px auto no-repeat;
-	height: 100px;
-	width: 100px;
-	margin: 20px;
-	padding: 20px;
-}
-
-
-
-
-
+/*----- cp_password -----*/
 .cp_iptxt {
 	position: relative;
 	width: 80%;
-	margin: 40px 3%;
+	margin: 0px 40px 20px 36px;
 }
-.cp_iptxt input[type=text] {
+.cp_password input[type=text] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
-	width: 100%;
+	width: 70%;
 	margin: 8px 0;
 	padding: 0.3em;
 	transition: 0.3s;
@@ -197,13 +158,13 @@ a.btn--radius {
 	border-radius: 4px;
 	outline: none;
 }
-.cp_iptxt input[type=text]:focus {
+.cp_password input[type=text]:focus {
 	border-color: #da3c41;
 }
-.cp_iptxt input[type=text] {
-	padding-left: 40px;
+.cp_password input[type=text] {
+	padding-left: 4px;
 }
-.cp_iptxt i {
+.cp_password i {
 	position: absolute;
 	top: 8px;
 	left: 0;
@@ -211,6 +172,42 @@ a.btn--radius {
 	transition: 0.3s;
 	color: #aaaaaa;
 }
-.cp_iptxt input[type=text]:focus + i {
+.cp_password[type=text]:focus + i {
+	color: #da3c41;
+}
+
+
+/*------------------------------ 投稿欄(/add) ------------------------------*/
+.cp_chat {
+	position: relative;
+	width: 80%;
+	margin: 0px 40px 20px 36px;
+}
+.cp_chat input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 70%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_chat input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_chat input[type=text] {
+	padding-left: 4px;
+}
+.cp_chat i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_chat input[type=text]:focus + i {
 	color: #da3c41;
 }
