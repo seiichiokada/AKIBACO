@@ -10,35 +10,35 @@
   <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/Bootstrap.css">
   <link rel="stylesheet" media="screen and (max-width:480px)" href="static/css/style.css">
 
- <title>みんなの声</title>
+ <title>みんなの声に投稿!</title>
 
 </head>
 
 <body>
   <!------------ハンバーガーメニュー------------>
   <header class = "fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">AKIBACO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <a class="navbar-brand" >AKIBACO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="/map">利用状況</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/add">投稿</a>
-            </li>
-           <li class="nav-item">
               <a class="nav-link" href="/bbs">みんなの声</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/add" >みんなの声に投稿!</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
- </header>   
+  </header>  
 
 
 
@@ -50,12 +50,12 @@
     </section>
 
     <section id="sec2">
-      <h2>みんなのこえ</h2>
+      <h2>みんなの声に投稿!</h2>
       <form action="/add" method="post">
         <div class="cp_chat">
-          <input type="text" size="30" maxlength="20"  name="task" placeholder="入力してくれい"> 
+          <input type="text" size="30" maxlength="20" name="task" placeholder="感じたことを投稿してね!">
           <input type="submit" name="save" value="送信" >
-        </div>
+      </div>
       </form>
     </section>
   </article>
