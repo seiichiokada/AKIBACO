@@ -1,8 +1,6 @@
 
 /*---------- /top・/regist・/bbs・/add ----------*/
 
-
-
 @charset "UTF-18";
 html {
     overflow-y: scroll;
@@ -20,10 +18,13 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+/*------------------------------ header ------------------------------*/
+.nav-item{
+	text-align: left;
+	margin-left: 5%;
+}
 
-
-
-/*------------------------------ ヘッド ------------------------------*/
+/*------------------------------ head ------------------------------*/
 #sec1 {
 	background-image: url(../img/SUNABACO1.jpg);
 	background-repeat: no-repeat;
@@ -45,14 +46,11 @@ body {
     color: #fff;
 }
 
-
-
-/*------------------------------ SNSアイコン(footer) ------------------------------*/
+/*------------------------------ footer ------------------------------*/
 #SNS {
 	display: flex;
 	justify-content: center;
 }
-
 #SNS .twitter a[target=_blank] {
 	background: url(./../img/Twitter2.png) right center/36px auto no-repeat;
     height: 100px;
@@ -60,7 +58,6 @@ body {
 	margin: 20px;
 	padding: 20px;
 }
-
 #SNS .SUNABACO a[target=_blank] {
 	background: url(./../img/yatusiro.png) right center/36px auto no-repeat;
 	height: 100px;
@@ -68,8 +65,6 @@ body {
 	margin: 20px;
 	padding: 20px;
 }
-
-
 
 /*------------------------------ ログイン(/top) & 新規登録(/regist) ------------------------------*/
 #sec2 {
@@ -101,7 +96,6 @@ a.btn--orange:hover {
   color: #fff;
   background: #f56500;
 }
-
 a.btn--radius {
    border-radius: 100vh;
 }
@@ -141,7 +135,6 @@ a.btn--radius {
 	color: #da3c41;
 }
 
-
 /*----- cp_password -----*/
 .cp_iptxt {
 	position: relative;
@@ -177,12 +170,11 @@ a.btn--radius {
 	color: #da3c41;
 }
 
-
-/*------------------------------ 投稿欄(/add) ------------------------------*/
+/*------------------------------ みんなの声に投稿!(/add) ------------------------------*/
 .cp_chat {
 	position: relative;
 	width: 80%;
-	margin: 0px 40px 20px 36px;
+	margin: 20px 40px 20px 36px;
 }
 .cp_chat input[type=text] {
 	font: 15px/24px sans-serif;
@@ -211,4 +203,11 @@ a.btn--radius {
 }
 .cp_chat input[type=text]:focus + i {
 	color: #da3c41;
+}
+
+/*------------------------------ みんなの声(/bbs) ------------------------------*/
+#chat h2 {
+    line-height: 35px;
+    padding: 40px 15px 25px 15px;
+	margin: 40px 20px 4px 20px;
 }

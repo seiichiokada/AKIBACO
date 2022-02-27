@@ -2,14 +2,29 @@
 /*---------- /map ----------*/
 
 
+/*------------------------------ header ------------------------------*/
+.nav-item{
+	text-align: left;
+	margin-left: 5%;
+}
+/*------------------------------ 利用状況 ------------------------------*/
+/*----- 机 -----*/
+li {
+	list-style-type: none;
+}
+.nav-item {
+    color: aliceblue;
+}
+.nav-link{
+    color: aliceblue;
+}
+#seat .text-center {
+    line-height: 35px;
+    padding: 40px 15px 25px 15px;
+	margin: 50px 20px 4px 20px;
+}
+
 /*----- 座席 -----*/
-#seat2 .set1 img {
-	margin: 5px;
-}
-.row {
-    position: relative;
-    
-}
 #seat img {
     position: relative;
     width: 100%;
@@ -434,40 +449,14 @@
     left: 18%;
 }
 
-
-
-
-li {
-	list-style-type: none;
-}
-.nav-item {
-    color: aliceblue;
-}
-.nav-link{
-    color: aliceblue;
-}
-#seat .text-center {
-    line-height: 35px;
-    padding: 40px 15px 25px 15px;
-	margin: 50px 20px 4px 20px;
-}
-
+/*------------------------------ お知らせ ------------------------------*/
 #event .text-center {
     line-height: 35px;
 	padding: 10px 15px;
 	margin: 24px 20px;
 }
 
-#chat .text-center {
-    line-height: 35px;
-    padding: 10px 15px;
-	margin: 24px 20px;
-}
-#chat .cp_list {
-    padding-left: 12px;
-}
-
-/*SNSアイコン*/
+/*------------------------------ footer ------------------------------*/
 #SNS {
 	display: flex;
 	justify-content: center;
