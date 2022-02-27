@@ -2,6 +2,10 @@ $(function(){
 	$('.gazo').click(function(){
 		var seat_id = $(this).attr ("id");
 		console.log(seat_id);
+		
+
+
+
 		if($(this).hasClass('open') == false){
 			$(this).attr('src', 'static/img/Chairred.png').addClass('open');
 
