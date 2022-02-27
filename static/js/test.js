@@ -9,13 +9,13 @@ $(function(){
 
 
 			
-			const sqlite3 = require('sqlite3').verbose();
-    		const db = new sqlite3.Database("../../akibacoDB.db");
+			// const sqlite3 = require('sqlite3').verbose();
+    		// const db = new sqlite3.Database("../../akibacoDB.db");
 
-			db.run("updete map set use_seat = 1 where id = seat_id");
+			// db.run("updete map set use_seat = 1 where id = seat_id");
 			
 			
-			db.close();			
+			// db.close();			
 
 		}else{
 			$(this).attr('src', 'static/img/chairgreen.png').removeClass('open');
