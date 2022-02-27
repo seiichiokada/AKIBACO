@@ -3,14 +3,13 @@
 
 
 /*----- 座席 -----*/
-
-/* #seat2 .set1 img {
+#seat2 .set1 img {
 	margin: 5px;
 }
 .row {
     position: relative;
     
-} */
+}
 #seat img {
     position: relative;
     width: 100%;
