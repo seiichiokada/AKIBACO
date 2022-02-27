@@ -24,7 +24,7 @@ def login_post():
         return render_template("top.html")
     else:
         session["user_id"]=user_id[0]
-        print(user_id)
+        # print(user_id)
         return redirect("/map")
 
 
@@ -46,9 +46,59 @@ def add_post():
 
 
 # マップ情報でっせ
-@app.route("/map")
-def seat():
-    return render_template("map.html")
+@app.route('/map')
+def map_seat():
+    conn = sqlite3.connect('akibacoDB.db')
+    c = conn.cursor()
+    c.execute("select use_seat from map")
+    use_in = c.fetchall()
+    print(use_in)
+    
+    conn.close()
+
+    return render_template('map.html')
+    # for row in c.fetchall():
+    #     use_in.append({"id": row[0], "comment": row[1], "time":row[2]})
+
+#     return render_template("map.html")
+# def edit(id):
+#     if id in session :
+#         conn = sqlite3.connect('akibacoDB.db')
+#         c = conn.cursor()
+#         c.execute("select comment from bbs where id = ?", (id,) )
+#         comment = c.fetchone()
+#         conn.close()
+#         if comment is not None:
+            # None に対しては インデクス指定できないので None 判定した後にインデックスを指定
+            # comment = comment[0] # "りんご" ○   ("りんご",) ☓
+            # fetchone()で取り出したtupleに 0 を指定することで テキストだけをとりだす
+    #     else:
+    #         return "アイテムがありません" # 指定したIDの name がなければときの対処
+        
+    #     return render_template("edit.html", comment=item)
+    # else:
+    #     return redirect("/login")
+# /add ではPOSTを使ったので /edit ではあえてGETを使う
+# @app.route("/map")
+# def map_get():
+
+#         use_id = request.args.get("use_id") # id
+#         print(use_id)
+#         use_id = int(use_id) # ブラウザから送られてきたのは文字列なので整数に変換する
+#         print(use_id)
+#         既にあるデータベースのデータを送られてきたデータに更新
+#         conn = sqlite3.connect('akibacoDB.db')
+#         c = conn.cursor()
+#         c.execute("update map set use_seat = 1 where use_id = ?",(use_id,))
+#         conn.commit()
+#         conn.close()
+#         アイテム一覧へリダイレクトさせる
+#         return redirect("/map")
+    # else:
+    #     return redirect("/login")
+# @app.route("/map")
+# def seat():
+#     return render_template("map.html")
     # if "user_id" in session:
     #     user_id = session["user_id"]
     #     conn = sqlite3.connect("akibacoDB.db")
