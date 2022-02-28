@@ -457,6 +457,11 @@ li {
 }
 
 /*------------------------------ footer ------------------------------*/
+
+footer {
+	background-color: #bb9a50;
+	height: 70px;
+}
 #SNS {
 	display: flex;
 	justify-content: center;
