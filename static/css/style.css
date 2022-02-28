@@ -30,23 +30,71 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-    padding: 100px 50px 100px 50px;
+    padding: 70px 50px 130px 50px;
+}
 
+#sec1 .coment{
+	margin-top: -20px;
 }
 #sec1 h1{
 	font-size: 30px;
     line-height: 60px;
     padding: 10px 50px 20px 50px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 #sec1 p{
 	font-size: 20px;
     line-height: 30px;
-	padding: 20px 50px ;
-    color: #fff;
+    color: rgb(255, 255, 255);
+}
+#sec5 {
+	background-image: url(./../img/kuma.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    padding: 106px 50px 130px 50px;
 }
 
+#sec5 .coment{
+	margin-top: -20px;
+}
+#sec5 h1{
+	font-size: 30px;
+    line-height: 60px;
+    padding: 10px 50px 20px 50px;
+    color: rgb(255, 255, 255);
+}
+#sec5 p{
+	font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+#sec6 {
+	background-image: url(./../img/hiyoko.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    padding: 170px 50px 130px 50px;
+}
+#sec6 .coment{
+	margin-top: -20px;
+}
+#sec6 h1{
+	font-size: 30px;
+    line-height: 60px;
+    padding: 10px 50px 20px 50px;
+    color: rgb(255, 255, 255);
+}
+#sec6 p{
+	font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
 /*------------------------------ footer ------------------------------*/
+footer {
+	background-color: #bb9a50;
+	height: 70px;
+}
 #SNS {
 	display: flex;
 	justify-content: center;
@@ -170,6 +218,21 @@ a.btn--radius {
 	color: #da3c41;
 }
 
+/*ボタン*/
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
 /*------------------------------ みんなの声に投稿!(/add) ------------------------------*/
 .cp_chat {
 	position: relative;
@@ -221,6 +284,7 @@ a.btn--radius {
   align-items: flex-start; /*縦位置を上揃え*/
 /*   align-items: center; */ /*縦位置を真ん中揃え*/
 }
+
 
 .says {
   max-width:500px; /*最大幅は任意*/
