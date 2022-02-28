@@ -26,7 +26,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="/map">利用状況とSUNABACO八代のイベント</a>
+                    <a class="nav-link" href="/map">利用状況</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/map#event">SUNABACO八代のイベント</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/bbs">みんなの声</a>
@@ -43,21 +46,27 @@
     <section id="chat">
         <h2 class="text-center">みんなの声</h2>
         <div class="container">
-            <div class="chat bg-light p-4">
-                <div class="message d-flex flex-row align-items-start mb-4">
-                    <p class="message-text">
-                        <table border="1">
+            <div class="bg-light p-4 balloon_l">
+                    <!-- <p class="message-text">
+                        <table class="example2" border="1" cellpadding="8">
                             {% for item in task_list %}
-                            <tr>
-                                <td>{{item["id"]}}</td>
-                                <td>{{item["task"]}}</td>
+                            <tr align="left" bgcolor="#EDCF61" > 
+                                <td  width="256" height="16" >{{item["task"]}}</td>
+                                <td  width="50" height="16">{{item["id"]}}</td>
+                               
                                 
                             </tr>
                             {% endfor %}
                         
                         </table>
-                    </p>
-                </div>
+                    </p> -->
+                    
+                    {% for item in task_list %}
+                        <div class="says12">
+                            <p >{{item["id"]}}さん</p>
+                            <p class="says">{{item["task"]}}</p>
+                        </div>
+                    {% endfor %}
             </div>
         </div>
     </section>
