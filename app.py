@@ -77,34 +77,30 @@ def seat():
     conn = sqlite3.connect("akibacoDB.db")
     c = conn.cursor()
     c.execute("SELECT color.img FROM map INNER JOIN color on map.use_seat = color.use_seat;")
-    # py_color = c.fetchall()
-    # print(py_color)
-    
     py_color = []
-
     for row in c.fetchall():
         py_color.append(row[0])
-    print(py_color)
     c.close()
-
     return render_template('map.html' , seat_color = py_color)
 
 
-    
-
-
-    
-
 # 投稿リストでっせ
 @app.route("/bbs")
-def list():
+def bbs():
+    # conn = sqlite3.connect("akibacoDB.db")
+    # c = conn.cursor()
+    # c.execute("SELECT name FROM users")
+    # task_list = c.fetchall()
+    # print(task_list)
     if "user_id" in session:
         print("読み込めた")
         user_id = session["user_id"]
         conn = sqlite3.connect("akibacoDB.db")
         c = conn.cursor()
-        c.execute("SELECT id, task FROM task where user_id = ?", (user_id,))
+        c.execute("SELECT task.tasks, users.name FROM task INNER JOIN users on task.users_id = users.id;")
+        
         task_list = []
+        print(task_list)
         for row in c.fetchall():
             task_list.append({"id":row[0],"task":row[1]})
         c.close()
